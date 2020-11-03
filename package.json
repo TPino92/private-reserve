@@ -1,0 +1,30 @@
+{
+  "name": "private-reserve",
+  "version": "1.0.0",
+  "description": "Use Node.js and Express.js to create a RESTful API.",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "handlebars": "^4.7.6",
+    "jest": "^26.6.2",
+    "mysql2": "^2.2.5",
+    "node": "^15.0.1",
+    "sequelize": "^6.3.5",
+    "sessions": "^0.0.2-7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TPino92/private-reserve.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TPino92/private-reserve/issues"
+  },
+  "homepage": "https://github.com/TPino92/private-reserve#readme"
+}
