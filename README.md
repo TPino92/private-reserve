@@ -1,26 +1,26 @@
 # private-reserveYour project should fulfill the following requirements:
 
-Use Node.js and Express.js to create a RESTful API.
+XXX Use Node.js and Express.js to create a RESTful API. XXX
 
-Use Handlebars.js as the templating engine.
+XXX Use Handlebars.js as the templating engine. XXX
 
-Use MySQL and the Sequelize ORM for the database.
+XXX Use MySQL and the Sequelize ORM for the database. XXX
 
-Have both GET and POST routes for retrieving and adding new data.
+XXX Have both GET and POST routes for retrieving and adding new data. XXX
 
 Be deployed using Heroku (with data).
 
 Use at least one new library, package, or technology that we haven’t discussed.
 
-Have a polished UI.
+XXX Have a polished UI. XXX
 
 Be responsive.
 
 Be interactive (i.e., accept and respond to user input).
 
-Have a folder structure that meets the MVC paradigm.
+XXX Have a folder structure that meets the MVC paradigm.XXX
 
-Include authentication (express-session and cookies).
+XXX Include authentication (express-session and cookies). XXX
 
 Protect API keys and sensitive information with environment variables.
 
