@@ -1,4 +1,4 @@
-# private-reserve
+# Private Reserve
 
 Your project should fulfill the following requirements:
 
