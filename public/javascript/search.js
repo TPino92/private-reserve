@@ -1,0 +1,1 @@
+//var allStrains = document.querySelector('#')
