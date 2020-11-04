@@ -2,21 +2,21 @@
 
 * TO DO
 
-Be deployed using Heroku (with data).
+** Be deployed using Heroku (with data).
 
-Use at least one new library, package, or technology that we haven’t discussed.
+** Use at least one new library, package, or technology that we haven’t discussed.
 
-Be responsive.
+** Be responsive.
 
-Be interactive (i.e., accept and respond to user input).
+** Be interactive (i.e., accept and respond to user input).
 
-Protect API keys and sensitive information with environment variables.
+** Protect API keys and sensitive information with environment variables.
 
-Have a clean repository that meets quality coding standards (file structure, naming conventions, best practices for class/id naming conventions, indentation, quality comments, etc.).
+** Have a clean repository that meets quality coding standards (file structure, naming conventions, best practices for class/id naming conventions, indentation, quality comments, etc.).
 
-Have a quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
+** Have a quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
 
-Finally, you must add your project to the portfolio that you created in Module 2
+** Finally, you must add your project to the portfolio that you created in Module 2
 
 * COMPLETE
 
