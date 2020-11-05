@@ -36,6 +36,6 @@
 
   XXX Include authentication (express-session and cookies). XXX
 
-heruko site: https://protected-hamlet-06385.herokuapp.com/
+heruko site: https://protected-hamlet-06385.herokuapp.com/  
 github repo: https://github.com/TPino92/private-reserve
 
