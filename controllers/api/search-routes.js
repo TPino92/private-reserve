@@ -7,7 +7,7 @@ const { Search } = require('../../models/Search');
 router.post("/", withAuth, (req, res) => {
     (async () => {
         try {
-            const response = await got('http://strainapi.evanbusse.com/70pPDSS/strains/search/name/Alaska');
+            const response = await got.get('http://strainapi.evanbusse.com/70pPDSS/strains/search/name/Alaska');
             console.log(response.body);
         } catch (error) {
             console.log(error.response.body);
