@@ -1,14 +1,23 @@
 const router = require("express").Router();
 const withAuth = require("../../utils/auth");
 const got = require('got');
+const { Search } = require('../../models/Search');
+
 
 router.post("/", withAuth, (req, res) => {
+    
+    Search.findAll({
+        where: {
+          search: req.body.search  
+        }
+    }).then
     (async () => {
-        const {body} = await got.get('http://strainapi.evanbusse.com/70pPDSS/strains/search/name/Alaska').json();
-        
-        console.dir(body);
-
-        res.json({data: body})
+        try {
+            const response = await got('http://strainapi.evanbusse.com/70pPDSS/strains/search/name/Alaska');
+            console.log(response.body);
+        } catch (error) {
+            console.log(error.response.body);
+        }
     })();
 });
 
