@@ -5,12 +5,6 @@ const { Search } = require('../../models/Search');
 
 
 router.post("/", withAuth, (req, res) => {
-    
-    Search.findAll({
-        where: {
-          search: req.body.search  
-        }
-    }).then
     (async () => {
         try {
             const response = await got('http://strainapi.evanbusse.com/70pPDSS/strains/search/name/Alaska');
