@@ -4,14 +4,17 @@ const got = require('got');
 const { Search } = require('../../models/Search');
 
 
-router.post("/", withAuth, (req, res) => {
+// searchTerm is the parameter
+router.get("/:searchTerm", withAuth, (req, res) => {
     (async () => {
-        try {
-            const response = await got.get('http://strainapi.evanbusse.com/70pPDSS/strains/search/name/Alaska');
-            console.log(response.body);
-        } catch (error) {
-            console.log(error.response.body);
-        }
+        const {body} = await got.get(`http://strainapi.evanbusse.com/70pPDSS/strains/search/name/${req.params.searchTerm}`);
+        
+        // console.dir(body);
+        // res.json(JSON.parse(body))
+        res.render("results", {
+            layout: "dashboard",
+           results: JSON.parse(body)
+          });
     })();
 });
 
