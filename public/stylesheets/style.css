@@ -3,8 +3,15 @@
     
 /* Set gray background color and 100% height */
 .sidenav {
-  background-color: #f1f1f1;
+  background-color: #cdf7c9;
   height: 100%;
+}
+
+.nav .nav-pills .nav-stacked {
+  background-color: #cdf7c9;
+  height: 100%;
+  color: #0B400E;
+  text-decoration: none;
 }
 
 /* Set black background color, white text and some padding */

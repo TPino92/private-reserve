@@ -1,8 +1,12 @@
 <div class="posts list-group">
   {{#each posts}}
-    <a class="list-item flex-row justify-space-between" href="/dashboard/edit/{{id}}">
+  <div class="card">
+    <a class="card-header flex-row justify-space-between" href="/dashboard/edit/{{id}}">
       <span>{{title}}</span>
       <span>{{format_date createdAt}}</span>
     </a>
+  </div>
   {{/each}}
 </div>
+
+{{!-- TO EDIT POSTS THRU DASHBOARD ONLY --}}
