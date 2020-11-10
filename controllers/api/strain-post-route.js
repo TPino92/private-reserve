@@ -1,8 +1,7 @@
 const router = require("express").Router();
+// const { Post, Comment, User } = require("../../models/");
 const withAuth = require("../../utils/auth");
-const got = require('got');
 
-// searchTerm is the parameter
 router.get("/:searchTerm", withAuth, (req, res) => {
     (async () => {
         const {body} = await got.get(`http://strainapi.evanbusse.com/70pPDSS/strains/search/name/${req.params.searchTerm}`);
@@ -10,7 +9,8 @@ router.get("/:searchTerm", withAuth, (req, res) => {
         // console.dir(body);
         // res.json(JSON.parse(body))
         
-        req.session.data = JSON.parse(body);
+        sess = req.session; 
+        sess.data = JSON.parse(body);
 
         res.render("results", {
             layout: "dashboard",

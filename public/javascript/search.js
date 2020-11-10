@@ -2,6 +2,7 @@ const searchFormHandler = async function(event) {
   // grab the searchterm
     var searchTerm = document.querySelector('#searchInput').value
     console.log(searchTerm)
+   
     
     event.preventDefault();
   
