@@ -1,18 +1,18 @@
 <div class="post card">
   <div class="card-header">
-    <h2>Create New Post</h2>
+    <h2>Create New Entry</h2>
   </div>
   <div class="container">
     <div class='row'>
       <div class="col">
         <form id="new-post-form" class="card-body">
-          <div>
-            <label class="form-label" for="post-title">Title</label>
+          <div class="form-group">
+            <label class="form-label" for="post-title">Title:</label>
             <input type="text" name="post-title" class="form-input" value='{{name}}' />
           </div>
-          <div>
-            <label class="form-label" for="post-body">Content</label>
-            <textarea name="post-body" class="form-input"></textarea>
+          <div class="form-group"> 
+            <label class="form-label" for="post-body">Your thoughts:</label>
+            <textarea style="width: 50%" name="post-body" class="form-input form-control"></textarea>
           </div>
           <button type="submit" class="btn">Create</button>
         </form>
