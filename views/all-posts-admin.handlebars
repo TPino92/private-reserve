@@ -6,7 +6,7 @@
         <a href="/post/{{id}}">{{title}}</a>
       </h2>
       <div>
-        Posted by {{User.username}} on {{format_date createdAt}}
+        Posted on {{format_date createdAt}}
       </div>
     </div>
     <div class="card-body">
@@ -15,5 +15,7 @@
   </article>
   {{/each}}
 </div>
+
+{{!-- HOME PAGE ONLY --}}
 
 
