@@ -1,7 +1,7 @@
 <div class="posts">
   {{#each posts}}
   <article class="card">
-    <div class="card-header flex-row justify-space-between">
+    <a class="card-header flex-row justify-space-between" href="/dashboard/edit/{{id}}"></a>
       <h2>
         <a href="/post/{{id}}">{{title}}</a>
       </h2>
@@ -15,3 +15,5 @@
   </article>
   {{/each}}
 </div>
+
+

@@ -1,22 +1,27 @@
 const router = require("express").Router();
 const { Post, Comment, User } = require("../models/");
+const withAuth = require("../utils/auth");
+
 
 // get all posts for homepage
-router.get("/", (req, res) => {
+router.get("/", withAuth, (req, res) => {
   Post.findAll({
     include: [User],
   })
     .then((dbPostData) => {
       const posts = dbPostData.map((post) => post.get({ plain: true }));
 
-      res.render("all-posts", { posts });
+      res.render("all-posts-admin", {
+        layout: "main",
+        posts
+      });
     })
     .catch((err) => {
       res.status(500).json(err);
     });
 });
 // get single post
-router.get("/post/:id", (req, res) => {
+router.get("/post/:id", withAuth, (req, res) => {
   Post.findByPk(req.params.id, {
     include: [
       User,
