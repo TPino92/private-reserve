@@ -11,6 +11,11 @@
             <input type="text" name="post-title" class="form-input" />
           </div>
           <div>
+            {{#if name}}
+            Name goes here: {{name}}
+            {{/if}}
+            </div>
+          <div>
             <label class="form-label" for="post-body">Content</label>
             <textarea name="post-body" class="form-input"></textarea>
           </div>
