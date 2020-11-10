@@ -1,6 +1,8 @@
 const router = require("express").Router();
 const withAuth = require("../../utils/auth");
 const got = require('got');
+const { Search } = require('../../models/Search');
+
 
 // searchTerm is the parameter
 router.get("/:searchTerm", withAuth, (req, res) => {
