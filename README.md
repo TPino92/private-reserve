@@ -29,7 +29,7 @@ Private Reserve gives people a place to keep their thoughts to themselves, Now y
   
   *Instructions and examples for use:*
   
-  If you'd like to test it for yourself head to the [**Live Site**](https://protected-hamlet-06385.herokuapp.com/) and play arround yourself. All you'll need to do is create and account. Then you can search, comment and add journal entries till your hearts content
+  If you'd like to test it for yourself head to the [**Live Site**](https://obscure-cove-36740.herokuapp.com/) and play arround yourself. All you'll need to do is create and account. Then you can search, comment and add journal entries till your hearts content
   
   ## In-Use
   
@@ -40,7 +40,7 @@ Private Reserve gives people a place to keep their thoughts to themselves, Now y
   
   ---
   ## Active Sites 
-  [**Live Site**](https://protected-hamlet-06385.herokuapp.com/)  
+  [**Live Site**](https://obscure-cove-36740.herokuapp.com/)  
   [**GitHub Repo**](https://github.com/TPino92/private-reserve) 
   
   ## Questions?
